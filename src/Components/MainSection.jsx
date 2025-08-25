@@ -1,5 +1,6 @@
 import React from 'react'
 import { BadgePercent, ChevronUp, Heart } from "lucide-react";
+import { MdOutlineStarPurple500, MdStarPurple500 } from "react-icons/md";
 const MainSection = () => {
   return (
     <div className="min-h-screen bg-gray-50 px-20 text-xl">
@@ -66,19 +67,82 @@ const MainSection = () => {
                   </button>
                 </div>
                 <div className="space-y-2">
-                  {[5, 4, 3, 2, 1].map((stars) => (
-                    <label key={stars} className="flex items-center gap-2 cursor-pointer">
+                 
+                    <label  className="flex items-center gap-2 cursor-pointer">
                       <input type="checkbox" className="rounded border-gray-300 text-orange-500 focus:ring-orange-500" />
                       <div className="flex items-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill={i < stars ? "currentColor" : "none"} className={i < stars ? "text-yellow-400" : "text-gray-300"}>
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                          </svg>
-                        ))}
-                        <span className="text-sm text-gray-600 ml-1">{stars} Star</span>
+                        
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdOutlineStarPurple500 color='orange'/>
+                       
+                        <span className="text-sm text-gray-600 ml-1">5 Star</span>
                       </div>
                     </label>
-                  ))}
+
+                    <label  className="flex items-center gap-2 cursor-pointer">
+                      <input type="checkbox" className="rounded border-gray-300 text-orange-500 focus:ring-orange-500" />
+                      <div className="flex items-center gap-1">
+                        
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdStarPurple500 color='orange'/>
+                       
+                        <span className="text-sm text-gray-600 ml-1">4 Star</span>
+                      </div>
+                    </label>
+
+                    <label  className="flex items-center gap-2 cursor-pointer">
+                      <input type="checkbox" className="rounded border-gray-300 text-orange-500 focus:ring-orange-500" />
+                      <div className="flex items-center gap-1">
+                        
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdStarPurple500 color='orange'/>
+                          <MdStarPurple500 color='orange'/>
+                          <MdStarPurple500 color='orange'/>
+                       
+                        <span className="text-sm text-gray-600 ml-1">3 Star</span>
+                      </div>
+                    </label>
+
+                    <label  className="flex items-center gap-2 cursor-pointer">
+                      <input type="checkbox" className="rounded border-gray-300 text-orange-500 focus:ring-orange-500" />
+                      <div className="flex items-center gap-1">
+                        
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdStarPurple500 color='orange'/>
+                          <MdStarPurple500 color='orange'/>
+                          <MdStarPurple500 color='orange'/>
+                          <MdStarPurple500 color='orange'/>
+                       
+                        <span className="text-sm text-gray-600 ml-1">2 Star</span>
+                      </div>
+                    </label>
+
+                    <label  className="flex items-center gap-2 cursor-pointer">
+                      <input type="checkbox" className="rounded border-gray-300 text-orange-500 focus:ring-orange-500" />
+                      <div className="flex items-center gap-1">
+                        
+                          <MdOutlineStarPurple500 color='orange'/>
+                          <MdStarPurple500 color='orange'/>
+                          <MdStarPurple500 color='orange'/>
+                          <MdStarPurple500 color='orange'/>
+                          <MdStarPurple500 color='orange'/>
+                          <MdStarPurple500  color='orange'/>
+                       
+                        <span className="text-sm text-gray-600 ml-1">1 Star</span>
+                      </div>
+                    </label>
+                
                 </div>
               </div>
 
@@ -514,6 +578,24 @@ const MainSection = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center mt-12">
+          <div className="flex items-center gap-2">
+            <button className="w-10 h-10 border border-gray-300  flex items-center justify-center text-gray-600 hover:border-gray-400">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button className="w-10 h-10 bg-orange-500 text-white  flex items-center justify-center font-medium">1</button>
+            <button className="w-10 h-10 border border-gray-300  flex items-center justify-center text-gray-600 hover:border-gray-400">2</button>
+            <button className="w-10 h-10 border border-gray-300  flex items-center justify-center text-gray-600 hover:border-gray-400">3</button>
+            <button className="w-10 h-10 border border-gray-300  flex items-center justify-center text-gray-600 hover:border-gray-400">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
